@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>lesson 19</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+        <section class="form-section">
+			<form class="form" id="sign-up" action="/save-user" method="" novalidate>
+				<div class="input-field">
+					<label for="username">Enter User Name</label>
+					<input type="text" id="username" placeholder="user name" required />
+					<span class="error-message" id="username-error"></span>
+				</div>
+
+				<div class="input-field">
+					<label for="email">Enter Email</label>
+					<input type="email" id="email" placeholder="email" required />
+					<span class="error-message" id="email-error"></span>
+				</div>
+
+				<div class="input-field">
+					<label for="password">Enter Password</label>
+					<input
+						type="password"
+						id="password"
+						placeholder="password"
+						minlength="4"
+					/>
+					<span class="error-message" id="password-error"></span>
+				</div>
+                <div class="iput-field">
+                    <label for="personalNumber">Enter personal number</label>
+                    <input type="text"
+                     id="personalNumber"
+                     placeholder="personal number"
+                     minlength="0"
+                       required>
+                    <span class="error-message" id="personal-error"></span>
+                    </div> 
+                    <div class="iput-field">
+                        <label for="mobile-number">Enter mobile number</label>
+                        <input type="text"
+                         id="mobileNumber"
+                         placeholder="mobile number"
+                         minlength="9"
+                           required>
+                        <span class="error-message" id="personal-error"></span>
+                        </div> 
+
+				<div class="input-field">
+					<button class="btn" type="submit">Submit</button>
+				</div>
+			</form>
+		</section>
+
+	 <link rel="stylesheet" href="script.js">
+    </body>
+</html>
+
